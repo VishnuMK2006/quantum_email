@@ -1,5 +1,6 @@
-pycrypto
 pycryptodome
 requests
 mysql-connector-python
 Django
+django-cors-headers
+djangorestframework

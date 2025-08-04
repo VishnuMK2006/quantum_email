@@ -16,6 +16,7 @@ class Emails(models.Model):
 
 class Users(models.Model):
     name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=254, unique=True, blank=True, null=True)
     username = models.CharField(max_length=100, primary_key=True, unique=True)
     public_key = models.CharField(max_length=100)
     salt = models.CharField(max_length=100)
